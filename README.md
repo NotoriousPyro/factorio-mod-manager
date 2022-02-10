@@ -15,7 +15,7 @@
     ```
 5. `mods`, `saves`, and `scenarios` in AppData\Factorio will be moved into a newly created subfolder `modpacks` created next to the script. These folders will be created as the mod name that was specified to the script.
 
-    For example:
+    * For example:
         
         ```Powershell
         $ > factorio_mod_manager.ps1 -Mod my_modpack_name
@@ -24,10 +24,9 @@
         
         ```
         - modpacks\
-        - my_modpack_name\
-            - mods\
-            - my_mod
-            - saves\
-            - scenarios\
+            - my_modpack_name\
+                - mods\
+                - saves\
+                - scenarios\
         ```
-    * A junction will be created pointing to these folders inside `AppData\Factorio` which the game loads from.
+    * Creates a junction pointing to these folders inside `AppData\Factorio` which the game loads from.
